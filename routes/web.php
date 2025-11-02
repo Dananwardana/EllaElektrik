@@ -51,5 +51,14 @@ Route::delete('/admin/products/{product}', [ProductController::class, 'destroy']
 Route::get('/shop/{category}', [ShopController::class, 'index'])
     ->name('shop');
 
+    // Halaman Compare Produk (user)
+Route::get('/compare-products', function () {
+    return Inertia::render('CompareProducts');
+})->name('compare.products');
+
+Route::get('/detailproduk', function () {
+    return Inertia::render('DetailProduct');
+});
+
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';

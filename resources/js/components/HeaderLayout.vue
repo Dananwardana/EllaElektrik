@@ -22,9 +22,12 @@
       <!-- Kanan: Keranjang + Login/Profile -->
       <div class="flex items-center space-x-10">
         <!-- Compare Produk -->
-        <div class="flex items-center space-x-2 hover:text-gray-300 cursor-pointer transition">
+        <Link
+          href="/compare-products"
+          class="flex items-center space-x-2 hover:text-gray-300 cursor-pointer transition"
+        >
           <img src="/images/compare-icon.png" alt="Compare Produk" class="h-5 w-6">
-        </div>
+        </Link>
 
         <!-- Keranjang -->
         <div class="flex items-center space-x-2 hover:text-gray-300 cursor-pointer transition">
